@@ -1,0 +1,1 @@
+import{fn}from"../js/modules/utils.js";window.fn=fn;

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="23px" viewBox="0 0 24 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>B9D32C8A-B8F8-43B0-A792-01031EB8818D</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="cart" transform="translate(-16.000000, -256.000000)" stroke="#404040" stroke-width="2">
+            <g id="Group-13" transform="translate(0.000000, 223.000000)">
+                <g id="shopping-cart" transform="translate(17.000000, 34.000000)">
+                    <circle id="Oval" cx="8" cy="20" r="1"></circle>
+                    <circle id="Oval" cx="19" cy="20" r="1"></circle>
+                    <path d="M0,0 L4,0 L6.68,13.39 C6.86873697,14.3402315 7.71138394,15.0185624 8.68,15 L18.4,15 C19.3686161,15.0185624 20.211263,14.3402315 20.4,13.39 L22,5 L5,5" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

